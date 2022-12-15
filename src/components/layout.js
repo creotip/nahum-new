@@ -1,33 +1,25 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from 'react'
+import Header from './header'
+import Container from './container'
+import { Box } from '@chakra-ui/react'
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
-  let header
-
-  if (isRootPath) {
-    header = (
-      <h1 className="main-heading">
-        <Link to="/">{title}</Link>
-      </h1>
-    )
-  } else {
-    header = (
-      <Link className="header-link-home" to="/">
-        {title}
-      </Link>
-    )
-  }
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">{header}</header>
-      <main>{children}</main>
+      <Header />
+      <Box as="main">
+        <Container className="layout-container"> {children}</Container>
+        {/*{children}*/}
+      </Box>
       <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        <Container display="flex" justifyContent="center" my={10} dir="ltr">
+          © {new Date().getFullYear()}, {` `}
+          {` `}
+          <a href="https://creotip.io"> creotip</a>
+        </Container>
       </footer>
     </div>
   )

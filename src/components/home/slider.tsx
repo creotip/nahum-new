@@ -20,6 +20,7 @@ import {
   shouldForwardProp,
 } from '@chakra-ui/react'
 import { FcNext, FcPrevious } from 'react-icons/fc'
+import {StaticImage} from "gatsby-plugin-image";
 
 function lerp(v0, v1, t) {
   return v0 * (1 - t) + v1 * t
@@ -179,6 +180,20 @@ export const Carousel = () => {
             {card}
           </Card>
         ))}
+        {/*<StaticImage*/}
+        {/*    layout="constrained"*/}
+        {/*    placeholder="dominantColor"*/}
+        {/*    src="../../images/cargo.jpg"*/}
+        {/*    alt="איילה אירועים "*/}
+        {/*    aspectRatio={16 / 9}*/}
+        {/*/>*/}
+        {/*<StaticImage*/}
+        {/*    layout="constrained"*/}
+        {/*    placeholder="dominantColor"*/}
+        {/*    src="../../images/cargo.jpg"*/}
+        {/*    alt="איילה אירועים "*/}
+        {/*    aspectRatio={16 / 9}*/}
+        {/*/>*/}
       </Cards>
       <Center gap="20px">
         <IconButton

@@ -36,42 +36,42 @@ const Header = () => {
       gridTemplateColumns="1fr 1fr 1fr"
       mb={4}
     >
-      <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
-        <DrawerOverlay />
-        <DrawerContent>
-          <DrawerCloseButton />
-          <DrawerHeader>Create your account</DrawerHeader>
+      {/*<Drawer isOpen={isOpen} placement="right" onClose={onClose}>*/}
+      {/*  <DrawerOverlay />*/}
+      {/*  <DrawerContent>*/}
+      {/*    <DrawerCloseButton />*/}
+      {/*    <DrawerHeader>Create your account</DrawerHeader>*/}
 
-          <DrawerBody>
-            <Input placeholder="Type here..." />
-          </DrawerBody>
-        </DrawerContent>
-      </Drawer>
+      {/*    <DrawerBody>*/}
+      {/*      <Input placeholder="Type here..." />*/}
+      {/*    </DrawerBody>*/}
+      {/*  </DrawerContent>*/}
+      {/*</Drawer>*/}
       <Box as="nav">
-        <IconButton
-          onClick={onOpen}
-          display={['block', 'block', 'none']}
-          variant="ghost"
-          aria-label="mobile menu"
-          icon={<HiOutlineMenuAlt3 size={28} />}
-        />
-        <List display={['none', 'none', 'flex']}>
-          <ListItem>
-            <Button variant="ghost" fontWeight="400">
-              אודות
-            </Button>
-          </ListItem>
-          <ListItem>
-            <Button variant="ghost" fontWeight="400">
-              צור קשר
-            </Button>
-          </ListItem>
-          <ListItem>
-            <Button variant="ghost" fontWeight="400">
-              לקוחות
-            </Button>
-          </ListItem>
-        </List>
+        {/*<IconButton*/}
+        {/*  onClick={onOpen}*/}
+        {/*  display={['block', 'block', 'none']}*/}
+        {/*  variant="ghost"*/}
+        {/*  aria-label="mobile menu"*/}
+        {/*  icon={<HiOutlineMenuAlt3 size={28} />}*/}
+        {/*/>*/}
+        {/*<List display={['none', 'none', 'flex']}>*/}
+        {/*  <ListItem>*/}
+        {/*    <Button variant="ghost" fontWeight="400">*/}
+        {/*      אודות*/}
+        {/*    </Button>*/}
+        {/*  </ListItem>*/}
+        {/*  <ListItem>*/}
+        {/*    <Button variant="ghost" fontWeight="400">*/}
+        {/*      צור קשר*/}
+        {/*    </Button>*/}
+        {/*  </ListItem>*/}
+        {/*  <ListItem>*/}
+        {/*    <Button variant="ghost" fontWeight="400">*/}
+        {/*      לקוחות*/}
+        {/*    </Button>*/}
+        {/*  </ListItem>*/}
+        {/*</List>*/}
       </Box>
 
       <Link to="/">
@@ -86,7 +86,7 @@ const Header = () => {
           />
         </a>
         <Box mr={4} display={['none', 'none', 'block']}>
-          054-4444444
+          053-248-1519
         </Box>
       </Flex>
     </Container>

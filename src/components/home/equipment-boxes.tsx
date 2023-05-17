@@ -3,14 +3,14 @@ import { Box, SimpleGrid } from "@chakra-ui/react"
 
 export const equipment = [
   "אוהלים",
-  "כסאות",
+  // "כסאות",
   "שולחנות",
-  "מתנפחים לילדים",
-  "ציוד לאירועים",
-  "פינות ישיבה",
-  "הפעלות לילדים",
-  "תאורה",
-  "הצללות",
+  "מתנפחים",
+  "דוכני מזון",
+  // "פינות ישיבה",
+  // "הפעלות לילדים",
+  // "תאורה",
+  // "הצללות",
 ]
 
 export const EquipmentBoxes = () => {
@@ -22,9 +22,11 @@ export const EquipmentBoxes = () => {
           textAlign="center"
           w="100%"
           h="100%"
-          bg="blue.200"
+          bg="linear-gradient(to left, #0f2027, #203a43, #2c5364)"
           py={10}
           fontWeight="700"
+          color='white'
+          fontSize='xl'
           borderRadius="6px"
           boxShadow="0 4px 30px rgb(0 0 0 / 10%)"
           border="1px solid rgba(255, 255, 255, 0.3)"

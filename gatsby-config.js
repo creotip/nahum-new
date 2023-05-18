@@ -9,13 +9,13 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `לאל מקור הברכה - יבוא ציוד לאירועים`,
     author: {
       name: `Kyle Mathews`,
       summary: `who lives and works in San Francisco building useful things.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `אנו חברת יבוא ושיווק מובילה בתחום של אוהלים, דוכני מזון ושולחנות. אנו מתמחים בהספקת פתרונות מודולריים לאירועים, תערוכות, מסיבות ואירועים.`,
+    siteUrl: `https://lael-makor.com/`,
     social: {
       twitter: `kylemathews`,
     },
@@ -111,8 +111,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `Gatsby`,
+        name: ` לאל מקור הברכה - יבוא ציוד לאירועים בע"מ`,
+        short_name: `לאל מקור הברכה`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website

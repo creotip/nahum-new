@@ -49,7 +49,7 @@ const BlogIndex = ({ data, location }) => {
                    color="white"
                    fontSize={['1rem', '2rem', '2rem']}
             >
-                יבוא ציוד לאירועים
+                יבוא ציוד לאירועים בע"מ
             </Box>
         </Box>
       </Flex>
